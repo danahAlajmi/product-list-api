@@ -1,0 +1,8 @@
+const express = require("express");
+const products = require("./data");
+const app = express();
+
+app.get("/api/products", (req, res) => {
+  res.json(products);
+});
+app.listen(8000);
